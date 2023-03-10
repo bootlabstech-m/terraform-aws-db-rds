@@ -63,11 +63,11 @@ variable "aws_db_instance" {
   type        = string
 
 }
-# variable "db_subnet_group_name" {
-#   description = "The region where the database is created ."
-#   type        = string
+variable "db_subnet_group_name" {
+  description = "The region where the database is created ."
+  type        = string
 
-# }
+}
 variable "delete_automated_backups" {
   description = "The region where the database is created ."
   type        = string

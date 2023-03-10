@@ -11,7 +11,7 @@ resource "aws_db_instance" "rds_instance" {
   max_allocated_storage    = var.max_allocated_storage
   availability_zone        = var.availability_zone
   backup_retention_period  = var.backup_retention_period
-  # db_subnet_group_name     = var.db_subnet_group_name
+  db_subnet_group_name     = var.db_subnet_group_name
   delete_automated_backups = var.delete_automated_backups
   deletion_protection      = var.deletion_protection
   skip_final_snapshot      = var.skip_final_snapshot
